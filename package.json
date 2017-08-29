@@ -1,0 +1,17 @@
+{
+  "name": "debtlist",
+  "version": "1.0.0",
+  "description": "This is my portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Adekunle Ogunade",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "postcss-assets": "^4.1.0",
+    "sendmail": "^1.1.1",
+    "serve-favicon": "^2.4.3"
+  }
+}

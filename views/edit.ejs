@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Debt List - Edit</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <nav id="primary_nav_wrap">
+    <ul>
+      <li><a href="#" class="nt">
+        <div></div><div></div><div></div>
+      </a>
+        <ul>
+          <li><a href="/">Add</a></li>
+          <li><a href="/search">Search</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<div id="alert"></div>
+<div class="form-style-5">
+  <form>
+    <fieldset>
+      <legend><span class="number">1</span> Debtor Info [EDITING]</legend>
+      <input type="text" id="name" name="field1" placeholder="Their Name *">
+      <input type="text" id="num" name="field2" placeholder="Their Contact Number *">
+      <input type="email" id="email" name="field3" placeholder="Their Email *">
+      <!--<textarea name="field3" placeholder="About yourself"></textarea>-->
+    </fieldset>
+    <fieldset>
+      <legend><span class="number">2</span> Debt Info</legend>
+      <input type="text" id="amount" name="field4" placeholder="The Amount They Owe *">
+      <label for="paid">Owing:</label>
+      <select id="paid" name="field4">
+        <optgroup label="Still Owing">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </optgroup>
+      </select>
+      <label for="when">When is it due or When was it paid:</label>
+      <input type="date" id="when" name="field5">
+    </fieldset>
+    <input type="submit" id="buv" value="Apply" />
+  </form>
+</div>
+
+
+<!--<div class="forms">
+<input id="name"/>
+<input id="amount"/>
+<input id="paid"/>
+<input id="when" type="date"/>
+<input id="buv" type="button"/>
+<input id="buv2" type="button"/>
+</div>-->
+<input id="buv2" type="button"/>
+<div id="du"></div>
+
+<% var jsndata = jsdatam %>
+<script>var getTest = <%- JSON.stringify(jsndata) %>;</script>
+</body>
+<script src="edit.js"></script>
+</html>
